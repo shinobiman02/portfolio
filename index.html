@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Robert N. Icaro, Web and Systems Developer specialized in IoT, AI Integration, and Automation.">
+    <title>Robert N. Icaro | Web & Systems Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Robert N. Icaro | Web & Systems Developer">
+    <meta property="og:description" content="Specialized in IoT, AI API integration, and automation. Building web apps, complex systems, and Arduino-based hardware solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css?v=4.0">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div id="scroll-progress" class="scroll-progress"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-logo">RI<span>.</span></div>
+    </div>
+
+    <div class="background-blob blob-1"></div>
+    <div class="background-blob blob-2"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content container">
+            <a href="#" class="logo">RI<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="CV_ROBERT_ICARO.pdf" class="btn btn-secondary nav-cv-btn" download="CV_ROBERT_ICARO.pdf">CV <i class="fas fa-download"></i></a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero section">
+            <div class="scanline"></div>
+            <div id="particles" class="particles"></div>
+            <div class="container hero-container align-items-center">
+                <div class="hero-content reveal">
+                    <p class="greeting">Hi, I am</p>
+                    <h1 class="name">Robert N. Icaro</h1>
+                    <h2 class="role"><span class="gradient-text">Web & Systems Developer</span></h2>
+                    <p class="summary">
+                        Specialized in IoT, AI API integration, and automation. I build web applications, integrate complex systems, and develop advanced Arduino-based hardware solutions for real-time monitoring and control.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>About <span class="gradient-text">Me</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Professional Summary</h3>
+                        <p>I am a passionate developer with a strong foundation in designing, integrating, and deploying robust systems. Whether it's crafting an intuitive front-end, scaling complex back-end operations, orchestrating AI to enhance analytics, or building automated hardware interfaces using IoT technologies, I strive to deliver end-to-end solutions that solve real-world problems efficiently.</p>
+                    </div>
+                    <div class="about-card glass-panel">
+                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Science in Computer Engineering</h4>
+                            <p class="institution">STI College Lipa City, Batangas, Philippines</p>
+                            <p class="date"><i class="far fa-calendar-alt"></i> 2014 - 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats section">
+            <div class="container reveal">
+                <div class="stats-grid">
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number" data-target="7">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number" data-target="13">0</div>
+                        <div class="stat-label">Professional Trainings</div>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Tech Stacks</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>My <span class="gradient-text">Specializations</span></h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass-panel">
+                        <i class="fas fa-microchip service-icon"></i>
+                        <h3>IoT & Automation</h3>
+                        <p>Designing end-to-end hardware solutions, sensor integration, and real-time monitoring systems using Arduino and ESP32.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <i class="fas fa-brain service-icon"></i>
+                        <h3>AI Integration</h3>
+                        <p>Implementing AI-driven insights, LLM API integrations, and predictive analytics into modern web architectures.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <i class="fas fa-code service-icon"></i>
+                        <h3>Systems Development</h3>
+                        <p>Building scalable web applications, RESTful APIs, and integrated portal solutions with high security and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>Technical <span class="gradient-text">Arsenal</span></h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category glass-panel">
+                        <div class="category-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Front-End</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+                            <li>React</li><li>Next.js</li>
+                            <li>Bootstrap / Tailwind CSS</li>
+                            <li>UI/UX Design</li><li>Responsive Web Design</li>
+                            <li>State Management</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Back-End</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Python</li><li>Node.js / Express.js</li>
+                            <li>PHP</li><li>C#</li><li>MySQL</li>
+                            <li>REST API Development</li><li>Auth Systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <div class="category-header">
+                            <i class="fas fa-robot"></i>
+                            <h3>AI & Integration</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Real-time AI Processing</li><li>OpenAI / Google AI API</li>
+                            <li>Prompt Engineering</li><li>Predictive Analytics</li>
+                            <li>AI Agents & Workflows</li><li>JSON Handling</li>
+                            <li>JWT / OAuth</li><li>Postman</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <div class="category-header">
+                            <i class="fas fa-microchip"></i>
+                            <h3>IoT & Embedded</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Arduino (C/C++)</li><li>ESP8266 / ESP32</li>
+                            <li>Sensor Integration</li><li>Relay Control</li>
+                            <li>UART / I2C / SPI</li><li>Industrial Automation</li>
+                            <li>PCB Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <div class="category-header">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Tools & Deployment</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Docker</li><li>Apache</li><li>Linux Server Management</li>
+                            <li>GitHub</li><li>AWS / VPS</li><li>VS Code</li>
+                            <li>Antigravity</li><li>Canva</li><li>Sublime Text</li>
+                            <li>Microsoft Office</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <div class="category-header">
+                            <i class="fas fa-users-cog"></i>
+                            <h3>Leadership & Soft Skills</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Technical Leadership</li><li>Partnerships</li><li>Problem-Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>Work <span class="gradient-text">Experience</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Computer Programmer I</h3>
+                                <span class="date">Feb 2023 — Mar 2026</span>
+                            </div>
+                            <h4 class="company">Department of Agriculture Regional Office | Lipa City, Philippines</h4>
+                            <ul class="timeline-details">
+                                <li>Developed and maintained in-house web systems (Isert v1 & v2) and integrated portal solutions.</li>
+                                <li>Managed third-party system integrations and database operations.</li>
+                                <li>Implemented IoT solutions for greenhouse and aquaponics automation.</li>
+                                <li>Supported automated weather station development and maintenance.</li>
+                                <li>Assisted in drone software operations and technical tasks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>Featured <span class="gradient-text">Projects</span></h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-content">
+                            <span class="project-role">Team Leader <span class="ai-badge">AI INTEGRATED</span></span>
+                            <h3>STARBOT</h3>
+                            <p class="project-tagline">Text-to-Speech Autonomous Announcement Robot</p>
+                            <p class="project-desc">Led the development of a mobile robot capable of converting text messages into real-time speech and LCD display announcements. Integrated obstacle avoidance, motion detection, and wireless communication for remote text commands.</p>
+                            <div class="tech-stack">
+                                <span>Arduino</span><span>Sensors</span><span>Automation</span><span>IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-content">
+                            <span class="project-role">Team Leader / Developer <span class="ai-badge">AI INTEGRATED</span></span>
+                            <h3>SGPP</h3>
+                            <p class="project-tagline">Smart Greenhouse Project Re-Automation</p>
+                            <p class="project-desc">Rebuilt a non-functional industrial greenhouse automation system. Developed web/mobile controls integrated with AI for real-time decision making. Automated irrigation and climate via multi-sensor arrays and integrated an automated weather station.</p>
+                            <div class="tech-stack">
+                                <span>IoT</span><span>Web</span><span>Mobile</span><span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-content">
+                            <span class="project-role">Developer <span class="ai-badge">AI INTEGRATED</span></span>
+                            <h3>ISERT v1 & v2</h3>
+                            <p class="project-tagline">ICT Service Request Ticketing System</p>
+                            <p class="project-desc">Developed a web-based ticketing system for managing office service requests. Designed an analytics dashboard with AI-driven insights, automated reporting, and task workflow management with real-time notification alerts.</p>
+                            <div class="tech-stack">
+                                <span>Web App</span><span>Analytics</span><span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-content">
+                            <span class="project-role">Team Leader / Developer</span>
+                            <h3>SSBA IoT BASED</h3>
+                            <p class="project-tagline">Smart System-Based Aquaponics</p>
+                            <p class="project-desc">Developed a smart aquaponics system with mobile-based monitoring. Implemented real-time automation of water levels, automated feeding schedules, and remote monitoring via Arduino and ESP8266 WiFi connectivity.</p>
+                            <div class="tech-stack">
+                                <span>NodeMCU</span><span>Arduino</span><span>Mobile UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-content">
+                            <span class="project-role">Developer</span>
+                            <h3>INTEGRATED PORTAL</h3>
+                            <p class="project-tagline">In-House Systems Unified Platform</p>
+                            <p class="project-desc">Developed a centralized web-based portal to manage multiple in-house applications. Implemented secure user authentication, role-based access, and backend API integration ensuring seamless operational efficiency.</p>
+                            <div class="tech-stack">
+                                <span>Auth</span><span>API</span><span>Backend Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-content">
+                            <span class="project-role">API Developer</span>
+                            <h3>BIOMETRIC ATTENDANCE</h3>
+                            <p class="project-tagline">Biometric Employee Attendance System Integration</p>
+                            <p class="project-desc">Integrated a government biometric attendance system by developing a custom API bridge for seamless data exchange. Configured fingerprint ID mapping, implemented secure data transmission, and ensured real-time attendance tracking with stakeholder collaboration.</p>
+                            <div class="tech-stack">
+                                <span>REST API</span><span>Biometrics</span><span>Security</span><span>Gov System</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 7 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-content">
+                            <span class="project-role">Developer</span>
+                            <h3>TAMS</h3>
+                            <p class="project-tagline">IoT Time & Attendance Management System</p>
+                            <p class="project-desc">Developed an RFID-based attendance system using ESP8266 with real-time data logging. Built a database and system for automatic DTR generation and employee registration, integrating hardware and web for reliable tracking.</p>
+                            <div class="tech-stack">
+                                <span>RFID</span><span>ESP8266</span><span>IoT</span><span>Web</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Development / Training -->
+        <section id="training" class="training section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>Professional <span class="gradient-text">Development</span></h2>
+                </div>
+                <div class="training-list glass-panel">
+                    <ul class="trainings">
+                        <li><i class="fas fa-check-circle"></i> NodeJS and Express.js API Development</li>
+                        <li><i class="fas fa-check-circle"></i> Data Cleansing & Standardization (Pentaho)</li>
+                        <li><i class="fas fa-check-circle"></i> Data Privacy and Cybersecurity Orientation</li>
+                        <li><i class="fas fa-check-circle"></i> Automated Weather Station Installation & Maintenance</li>
+                        <li><i class="fas fa-check-circle"></i> Calibration of Automated Weather Station (AWS)</li>
+                        <li><i class="fas fa-check-circle"></i> Calibration & Field Comparison of Data from Meteorological Instruments</li>
+                        <li><i class="fas fa-check-circle"></i> ArcGIS Phase I (Aeronautical Reconnaissance Coverage GIS)</li>
+                        <li><i class="fas fa-check-circle"></i> Five Day UAV Flight & GIS Application Drone Training</li>
+                        <li><i class="fas fa-check-circle"></i> Drone Image Processing for Agricultural Monitoring</li>
+                        <li><i class="fas fa-check-circle"></i> Training of Trainers on Site Specific Nutrient Management on Cassava</li>
+                        <li><i class="fas fa-check-circle"></i> Interactive Dashboard for Data Visualization in MS Excel</li>
+                        <li><i class="fas fa-check-circle"></i> Data Management using MS Excel and Google Sheets</li>
+                        <li><i class="fas fa-check-circle"></i> PowerPoint Presentation Proficiency</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container reveal">
+                <div class="section-header text-center">
+                    <h2>Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="contact-subtitle">Get in touch for opportunities, collaborations, or just to say hi.</p>
+                </div>
+                <div class="contact-cards">
+                    <a href="mailto:obeticaro02@gmail.com" class="contact-card glass-panel">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>obeticaro02@gmail.com</p>
+                    </a>
+                    <a href="tel:+639760352792" class="contact-card glass-panel">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h4>Phone</h4>
+                        <p>+63 976 035 2792</p>
+                    </a>
+                    <div class="contact-card glass-panel">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Location</h4>
+                        <p>Lipa City, Batangas, Philippines</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Robert N. Icaro. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Social links can be added here -->
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
